@@ -1,0 +1,136 @@
+:root{
+  --text:#111;
+  --muted:rgba(0,0,0,.70);
+  --maxw:760px;
+  --plate:400px;
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; background:#EEF2EC; color:var(--text); }
+body{
+  font-family:"EB Garamond", ui-serif, Georgia, serif;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+.wrap{
+  max-width:var(--maxw);
+  margin:72px auto;
+  padding:0 22px 64px;
+}
+
+.header{
+  text-align:center;
+  margin-bottom:26px;
+}
+
+.title{
+  margin:0;
+  font-size:62px;
+  letter-spacing:0.03em;
+  font-weight:600;
+  
+
+  color:#0A4A32;
+}
+
+.byline{
+  margin-top:10px;
+  font-size:20px;
+  font-weight:400;
+  color:var(--muted);
+}
+
+.plate{
+  display:flex;
+  justify-content:center;
+  margin:34px 0;
+}
+
+.plate.hero{ margin-top:28px; }
+
+.plate img{
+  width:var(--plate);
+  height:var(--plate);
+  object-fit:cover;
+  display:block;
+}
+
+.plate-nav{
+  text-align:center;
+  margin:18px 0 44px;
+  font-size:18px;
+  letter-spacing:0.08em;
+
+  font-weight:600;
+}
+
+.plate-nav .nav-row{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  margin:6px 0;
+}
+
+.plate-nav a{
+  color:#0A4A32;
+  text-decoration:none;
+  padding:2px 6px;
+}
+
+.plate-nav a:hover{ text-decoration:underline; text-underline-offset:3px; }
+
+.dialogue{
+  margin-top:10px;
+}
+
+.turn{
+  display:flex;
+  gap:14px;
+  margin:18px 0;
+}
+
+.speaker{
+  flex:0 0 auto;
+  width:34px;
+  letter-spacing:0.10em;
+  font-weight:600;
+}
+
+.text{
+  flex:1 1 auto;
+  font-size:20px;
+}
+
+.footer{
+  margin-top:54px;
+  text-align:center;
+}
+
+.toplink{
+  color:var(--muted);
+  text-decoration:none;
+  font-size:16px;
+}
+
+.toplink:hover{ text-decoration:underline; text-underline-offset:3px; }
+
+@media (max-width:520px){
+  :root{ --plate:300px; }
+  .wrap{ margin:56px auto; }
+  .title{ font-size:62px;
+  letter-spacing:0.03em; 
+  color:#0A4A32;
+}
+  .byline{ font-size:18px; }
+  .text{ font-size:19px; }
+  .speaker{ width:30px; }
+}
+
+
+/* Enlarge London plate (IV) significantly */
+#iv img {
+  width: 560px;
+  height: 560px;
+}
