@@ -119,14 +119,15 @@ body{
 @media (max-width:520px){
   :root{ --plate:300px; }
   .wrap{ margin:56px auto; }
-  .title{ font-size:62px;
-  letter-spacing:0.03em; 
-  color:#0A4A32;
-}
+  .title{ 
+    font-size:50px;
+    letter-spacing:0.02em;
+  }
   .byline{ font-size:18px; }
   .text{ font-size:19px; }
   .speaker{ width:30px; }
 }
+
 
 
 /* Enlarge London plate (IV) significantly */
